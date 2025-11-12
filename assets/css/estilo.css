@@ -12,19 +12,21 @@ h1, h2, h3, h4, p {
     line-height: 1.5;
 }
 div h4 {
-    margin-bottom: 15px;
+    margin-bottom: 15%;
     font-size: larger;
-    font-weight: 100px;
+    font-weight: 100%;
 }
 /*MENÚ DE NAVEGACIÓN*/
-.menu {
-    background-color: #c4c4c4;;
-    padding: 10px 10px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    top: 0;
+header .navbar {
+    background-color: #c4c4c4;
+    padding: 0.2%;
+    display: flex;
+    margin-bottom: 5%;
+    gap: 20%;
+    justify-content: space-evenly;
 }
-.menu ul {
+
+nav div ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -32,25 +34,31 @@ div h4 {
     gap: 20px;
 }
 
-.menu li a {
-    color: #000000;
-    text-decoration: none;
+.menu .navbar-nav li a {
     font-size: 18px;
-    padding: 8px 15px;
+    padding: center;
     border-radius: 10px;
     transition: background-color 0.3s;
+    
 }
-.menu li a:hover {
+.navbar .list li a:hover {
     background-color: #8800c7;
-    color: #fff;
+    color: #ffffff;
 }
+
+
 
 /* LOGO */
 .logo {
+    display: flex;
     font-weight: bold;
     color: #8800c7;
     font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 15px;
 }
+
 .texto {
     margin: 0 20px 30px;
     font-size: 18px;
@@ -74,10 +82,17 @@ div h4 {
     border-radius: 20px;
 }
 .good-imagen {
+    display: grid;
     width: 350px;
     height: 500px;
     border-radius: 20px;
 }
+
+header div .good-imagen{
+    align-items: center;
+    padding: auto;
+} 
+
 /*BOTONES*/
 .boton {
     display: inline-block;
@@ -127,7 +142,7 @@ header h2 .titulo2 {
     padding: 20px;
 }
 .oferta {
-    background: #fff;
+    background: #ffffff;
     padding: 15px;
     margin: 10px;
     border-radius: 20px;
@@ -135,6 +150,15 @@ header h2 .titulo2 {
     flex: 1 1 calc(30% - 40px);
     text-align: center;
 }
+.oferta1{
+    background: #c0c0c0;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
 /*OOTER*/
 footer {
     color: #000;
@@ -143,17 +167,15 @@ footer {
     border-radius: 5px;
     margin-top: 20px;
 }
-.stock {
+.stock{
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
     text-align: center;
 }
-.card {
-    display: block;
-    flex-direction: column;
-}
+
+
 .good-imagen2 {
     width: 250px;
     height: 350px;
@@ -184,13 +206,53 @@ footer p #ultimo {
     margin-left: auto;
     margin-right: auto;
 }
+/*botones de contacto*/
+.wsp-btn{
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.wsp-btn:hover{
+    background-color: #18a551;
+}
+
+.wsp-btn2{
+    display: inline-block;
+    background-color: #e031da;
+    padding: 12px 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.wsp-btn2:hover{
+    background-color: #941c92;
+}
+
+.btn1{
+    display: inline-block;
+    background-color: #efac39;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover{
+    background-color: #c58413;
+}
+
+
+
+/*mapa*/
 .mapa {
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     border-radius: 10px;
-    display: flex;
-    gap: 20px;
-    background-color: #f4f4f4;
+    gap: 60px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -205,21 +267,279 @@ footer p #ultimo {
     margin-right: auto;
     list-style: none;
 }
-.contacto-lista{
+
+.contacto{
+    width: 40%;
+}
+
+.contacto-lista {
+    display: grid;
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.contacto-lista li {
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hace que el enlace (y el ícono) se ubiquen debajo del texto */
+.contacto-lista a {
+    display: block;
+    margin-top: 8px;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.contacto-lista a:hover {
+    color: #000;
+}
+
+/* Estilo especial para el icono de Instagram */
+.contacto-lista i {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #a42d43; /* color típico de Instagram */
+    vertical-align: middle;
+}
+
+.contacto-lista .wsp-btn i  {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #297a13; /* color típico de Instagram */
+    vertical-align: middle;
+}
+
+
+
+
+/* .contacto-lista{
+    display: block;
     text-align: center;
     list-style: none;
-}
+} */
 
 footer div.pregunta {
     text-decoration: double;
 }
 
+.footer {
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+    padding: 30px 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-contenido h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-contenido p {
+    font-size: 0.95rem;
+    color: #ccc;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.footer-contacto {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contacto li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+.footer-contacto i {
+    margin-right: 8px;
+  color: #e4b700; /* color detalle elegante */
+}
+
+.footer-contacto a {
+    color: #e4b700;
+    text-decoration: none;
+}
+
+.footer-contacto a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+
+
+
+
+/* --- VERSIÓN RESPONSIVE --- */
+@media (max-width: 780px) {
+
+    header .navbar {
+    background-color: #c4c4c4;
+    margin-bottom: 5%;
+    top: 50%;
+    gap: 50%;
+}
+
+
+    .menu ul {
+    justify-content: center;
+    gap: 5%;
+}
+
+
+    /* Reorganiza el menú */
+    .menu {
+        position: relative;
+    }
+
+    /* El logo se ve arriba, centrado */
+    nav .logo {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+
+    /* Oculta el menú por defecto */
+    .menu ul {
+        flex-direction: column;
+        top: 60px; /* debajo del header */
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+      /* PRODUCTO DESTACADO */
+    .producto-destacado {
+        flex-direction: column-reverse; /* imagen arriba */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .good-imagen {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .stock {
+        grid-template-columns: 1fr;
+    } 
+
+    .servicios{
+        text-align: center;
+        width: auto;        
+    }
+
+    /*  OFERTAS  */
+    .ofertas {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    } 
+
+    .oferta {
+        width: 70%;
+        margin: 10px 0;
+    }
+
+    main .contacto{
+        width: 100%;
+    }
+
+    .mapa {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+
+}
+}
+
+
+    /* .servicios{
+        text-align: center;
+        font-size: 60%;
+        padding: 50%;
+    } */
 
 
 
 
 
 
+
+/*     
+
+
+    .logo {
+        font-size: 16px;
+    }
+
+  
+
+    /*.producto {
+        width: 90%;
+        padding: 15px;
+    }
+
+    
+
+    
+/* 
+    .texto {
+        font-size: 16px;
+        margin: 10px;
+    } */
+
+    /* .boton {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    } */
+
+    /* footer {
+        font-size: 12px;
+        padding: 10px;
+    } 
+
+    
+
+    .good-imagen2 {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .contacto,
+    .reseñas,
+    .servicios {
+        width: 90%;
+    }
+
+    .mapa {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    } */
 
 
 
@@ -256,5 +576,29 @@ footer div.pregunta {
     justify-items: center;
     padding: 20px;
     border-radius: 10px;
-}*/
+    /*  GENERAL  /
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, p {
+        text-align: center;
+    }
+
+    /*  MENÚ HAMBURGUESA  
+    .menu {
+        position: relative;
+    }
+
+    /* Oculta el menú por defecto 
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #c4c4c4;
+
+    }*/
+
+
 
