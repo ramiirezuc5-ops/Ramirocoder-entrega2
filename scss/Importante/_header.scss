@@ -1,0 +1,35 @@
+/*MENÚ DE NAVEGACIÓN*/
+header {
+    .navbar {
+        background-color: #c4c4c4;
+        padding: 0.2%;
+        display: flex;
+        margin-bottom: 5%;
+        gap: 20%;
+        justify-content: space-evenly;
+        div{
+            ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+
+
+.menu .navbar-nav li a {
+    font-size: 18px;
+    padding: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    
+}
+
+.navbar .list li a:hover {
+    background-color: #8800c7;
+    color: #ffffff;
+}

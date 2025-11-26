@@ -1,0 +1,16 @@
+.stock{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
+    .card{
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        h4{
+            padding: 10px;
+            gap: 5px;
+            margin: 5px;
+        }
+    }
+}

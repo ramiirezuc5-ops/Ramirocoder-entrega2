@@ -1,0 +1,24 @@
+/*OFERTAS*/
+.ofertas {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.oferta {
+    background: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+}
+.oferta1{
+    background: #c0c0c0;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+}

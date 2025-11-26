@@ -4,43 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--FONTAWESON-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <title>BlackMagic.rug</title>
+
+    <!-- ESTILOS PROPIOS -->
     <link rel="stylesheet" href="assets/css/estilo.css">
+
 </head>
 
 <body>
 
+    <!-- MENÚ DE NAVEGACIÓN -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary menu ">
             <a class="logo">BlackMagic.rug</a>
+
+            <!-- Botón menú móvil -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Ítems del menú -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 list">
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-home"
-                                target="_blank"></i>Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html"><i
+                                class="fa-solid fa-home"></i>Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="page/servicios.html" target="_blank">
+                        <a class="nav-link active" aria-current="page" href="page/servicios.html">
                             <i class="fa-solid fa-screwdriver-wrench"></i>Servicios</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="page/stock.html" target="_blank">
+                        <a class="nav-link active" aria-current="page" href="page/stock.html">
                             <i class="fa-solid fa-box"></i>Stock</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="page/cliente.html" target="_blank">
+                        <a class="nav-link active" aria-current="page" href="page/cliente.html">
                             <i class="fa-solid fa-address-card"></i>Clientes</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" aria-current="page" href="page/contacto.html" target="_blank">
+                        <a class="nav-link active" aria-current="page" href="page/contacto.html">
                             <i class="fa-solid fa-phone"></i>Contacto</a>
                     </li>
                 </ul>
@@ -48,13 +61,14 @@
         </nav>
     </header>
     <main>
-        <section class="fondo">
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="fondo"> <!-- fondo de pagina -->
             <img src="assets/img/Imagenfondo.jpg" alt="fondo">
         </section>
-        <section>
+        <div>
             <h1 class="encabezado">Descubrí la magia de las alfombras personalizadas</h1>
-        </section>
-        <section class="empresa">
+        </div>
+        <section class="empresa"> <!-- SOBRE LA EMPRESA -->
             <p class="texto">
                 ¡Transforma tu espacio con una alfombra única y personalizada! En Black Magic, creamos alfombras que
                 reflejan tu estilo y personalidad.
@@ -63,7 +77,7 @@
                 ¡Contáctanos hoy mismo y dale vida a tus ideas con Black Magic!
             </p>
         </section>
-        <section class="producto-destacado">
+        <section class="producto-destacado"> <!-- PRODUCTO DESTACADO  -->
             <div class="producto">
                 <h4>Alfombra - YouLookGood</h4>
                 <p>Diseño exclusivo</p>
@@ -77,8 +91,12 @@
             </div>
         </section>
     </main>
-        <section class="footer2">
-        <h2>!OFERTAS IMPERDIBLES¡</h2>
+
+    <!-- SECCION DE OFERTAS -->
+    <section class="footer2">
+        <div>
+            <h2 class="titulo2">!OFERTAS IMPERDIBLES¡</h2>
+        </div>
         <div class="ofertas">
             <div class="oferta">
                 <h4>OFERTA 1</h4>
@@ -106,12 +124,16 @@
             </div>
         </div>
     </section>
-<footer class="footer">
-        <div class="footer-contenido">
-            <h3>BlackMagic.rug</h3>
-            <p>Diseñamos y confeccionamos alfombras únicas, hechas a mano con materiales de alta calidad.
-                Cada pieza es un toque de arte para tu hogar.</p>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div>
+                <h3>BlackMagic.rug</h3>
+                <p>Diseñamos y confeccionamos alfombras únicas, hechas a mano con materiales de alta calidad.
+                    Cada pieza es un toque de arte para tu hogar.</p>
+            </div>
+            <!-- LISTA DE CONTACTO -->
             <ul class="footer-contacto">
                 <li>
                     <a href="mailto:blackmagic@gmail.com"><i class="fa-solid fa-envelope"></i> blackmagic@gmail.com</a>
@@ -119,10 +141,10 @@
                 <li>
                     <a href="tel:+546447530578"><i class="fa-brands fa-whatsapp"></i> +54 3447 530578</a>
                 </li>
-                <li><i class="fa-brands fa-instagram"></i> 
-                    <a href="https://www.instagram.com/blackmagic.rugs"
-                        rel="noopener" target="_blank">blackmagic.rugs</a>
-                    </li>
+                <li><i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/blackmagic.rugs" rel="noopener"
+                        target="_blank">blackmagic.rugs</a>
+                </li>
             </ul>
         </div>
 
@@ -130,7 +152,8 @@
             <p>&copy; 2025 BlackMagic.rug — Todos los derechos reservados.</p>
         </div>
     </footer>
-    <!--boootstrap-->
+
+    <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>

@@ -1,0 +1,84 @@
+/* --- VERSIÓN RESPONSIVE --- */
+@media (max-width: 780px) {
+
+    header .navbar {
+    background-color: #c4c4c4;
+    margin-bottom: 5%;
+    top: 50%;
+    gap: 50%;
+}
+
+
+    .menu ul {
+    justify-content: center;
+    gap: 5%;
+}
+
+
+    /* Reorganiza el menú */
+    .menu {
+        position: relative;
+    }
+
+    /* El logo se ve arriba, centrado */
+    nav .logo {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        
+    }
+
+    /* Oculta el menú por defecto */
+    .menu ul {
+        flex-direction: column;
+        top: 60px; /* debajo del header */
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+      /* PRODUCTO DESTACADO */
+    .producto-destacado {
+        flex-direction: column-reverse; /* imagen arriba */
+        gap: 50px;
+        padding: 20px;
+    }
+
+
+    .good-imagen {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .stock {
+        grid-template-columns: 1fr;
+    } 
+
+    .servicios{
+        text-align: center;
+        width: auto;        
+    }
+
+    /*  OFERTAS  */
+    .ofertas {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    } 
+
+    .oferta {
+        width: 70%;
+        margin: 10px 0;
+    }
+
+
+    .mapa {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+
+}
+}

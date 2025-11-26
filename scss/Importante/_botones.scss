@@ -1,0 +1,23 @@
+/*BOTONES*/
+.boton {
+    display: inline-block;
+    padding: 10px 40px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header h2 .titulo2 {
+    margin-bottom: 0;
+}
+.boton:hover {
+    background-color: #8800c7;
+    color: #ffffff;
+}
+.boton2:hover {
+    background-color: #8800c7;
+    color: #ffffff;
+}

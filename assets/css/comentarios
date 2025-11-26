@@ -1,0 +1,171 @@
+
+/* .contacto-lista{
+    display: block;
+    text-align: center;
+    list-style: none;
+} */
+/* .servicios{
+        text-align: center;
+        font-size: 60%;
+        padding: 50%;
+    } */
+
+
+
+
+
+
+
+/*     
+
+
+    .logo {
+        font-size: 16px;
+    }
+
+
+
+    /*.producto {
+        width: 90%;
+        padding: 15px;
+    }
+
+    
+
+    
+/* 
+    .texto {
+        font-size: 16px;
+        margin: 10px;
+    } */
+
+    /* .boton {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    } */
+
+    /* footer {
+        font-size: 12px;
+        padding: 10px;
+    } 
+
+    
+/* Contenedor principal 
+.Stock {
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    /*  GENERAL  /
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, p {
+        text-align: center;
+    }
+
+    /*  MENÚ HAMBURGUESA  
+    .menu {
+        position: relative;
+    }
+
+    /* Oculta el menú por defecto 
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #c4c4c4;
+
+    }*/
+/*# sourceMappingURL=estilo.css.map */
+
+
+    /* .good-imagen2 {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .contacto,
+    .reseñas,
+    .servicios {
+        width: 90%;
+    }
+
+    .mapa {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+    }  */
+
+
+
+
+
+
+
+
+/* 
+    .texto {
+        font-size: 16px;
+        margin: 10px;
+    } */
+/* .boton {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+} */
+/* footer {
+    font-size: 12px;
+    padding: 10px;
+} 
+
+
+
+.good-imagen2 {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.contacto,
+.reseñas,
+.servicios {
+    width: 90%;
+}
+
+.mapa {
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+} */
+/* Contenedor principal 
+.Stock {
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    /*  GENERAL  /
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, p {
+        text-align: center;
+    }
+
+    /*  MENÚ HAMBURGUESA  
+    .menu {
+        position: relative;
+    }
+
+    /* Oculta el menú por defecto 
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #c4c4c4;

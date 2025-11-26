@@ -1,0 +1,47 @@
+.contacto{
+    width: 40%;
+}
+
+.contacto-lista {
+    display: grid;
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+}
+
+.contacto-lista li {
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hace que el enlace (y el ícono) se ubiquen debajo del texto */
+.contacto-lista a {
+    display: block;
+    margin-top: 8px;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.contacto-lista a:hover {
+    color: #000;
+}
+
+/* Estilo especial para el icono de Instagram */
+.contacto-lista i {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #a42d43; /* color de Instagram */
+    vertical-align: middle;
+}
+
+.contacto-lista .wsp-btn i  {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #297a13; 
+    vertical-align: middle;
+}

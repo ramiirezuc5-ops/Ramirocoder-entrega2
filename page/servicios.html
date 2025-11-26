@@ -4,78 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!--FONTAWESON-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- ESTILOS PROPIOS -->
     <link rel="stylesheet" href="../assets/css/estilo.css">
+
     <title>Servicios | BlackMagic.rug</title>
 </head>
 
 <body>
+    <!-- MENÚ DE NAVEGACIÓN -->
     <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary menu ">
-                <a class="logo">BlackMagic.rug</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 list">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="../index.html"><i
-                                    class="fa-solid fa-home" target="_blank"></i>Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="servicios.html"><i
-                                    class="fa-solid fa-screwdriver-wrench"></i>servicios</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="stock.html" target="_blank"><i
-                                    class="fa-solid fa-box"></i>Stock</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="cliente.html" target="_blank"><i
-                                    class="fa-solid fa-address-card"></i>Clientes</a>
-                        </li>
-                        <li  class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="contacto.html" target="_blank"><i
-                                    class="fa-solid fa-phone"></i>Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary menu ">
+            <a class="logo">BlackMagic.rug</a>
+
+            <!-- Botón menú móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Ítems del menú -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 list">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="../index.html"><i
+                                class="fa-solid fa-home"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="servicios.html"><i
+                                class="fa-solid fa-screwdriver-wrench"></i>Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="stock.html"><i
+                                class="fa-solid fa-box"></i>Stock</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="cliente.html"><i
+                                class="fa-solid fa-address-card"></i>Clientes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" aria-current="page" href="contacto.html"><i
+                                class="fa-solid fa-phone"></i>Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 </body>
-<!-- <nav class="menu">
-    <ul class="list">
-        <li class="logo">BlackMagic.rug</li>
-        <li>
-            <a href="../index.html"><i class="fa-solid fa-home"></i>Inicio</a>
-        </li>
-        <li>
-            <a href="servicios.html" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i>Servicios</a>
-        </li>
-        <li>
-            <a href="stock.html" target="_blank"><i class="fa-solid fa-box"></i>Stock</a>
-        </li>
-        <li>
-            <a href="cliente.html" target="_blank"><i class="fa-solid fa-address-card"></i>Clientes</a>
-        </li>
-        <li>
-            <a href="contacto.html" target="_blank"><i class="fa-solid fa-phone"></i>Contacto</a>
-        </li>
-    </ul>
-</nav>
-</header> -->
+
 <main>
-    <h1>Nuestros Servicios</h1>
-    <section class="fondo">
+    <section class="fondo"> <!-- fondo de pagina -->
         <img src="../assets/img/Imagenfondo.jpg" alt="fondo">
     </section>
-    <p class="texto">Ofrecemos una variedad de servicios para satisfacer tus necesidades:</p>
+
+    <div>
+        <h1 class="encabezado">Nuestros Servicios</h1>
+    </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <div>
+        <p class="texto">Ofrecemos una variedad de servicios para satisfacer tus necesidades:</p>
+    </div>
     <section class="texto">
+        <!-- LISTA DE SERVICIOS -->
         <ul class="servicios">
             <li>Alfombras en 3D</li>
             <li>Diseños Personalizados</li>
@@ -86,66 +84,75 @@
             <li>Envío y Entrega</li>
         </ul>
     </section>
-    <div>
-        <p class="texto">Nuestro equipo de expertos está listo para ayudarte a transformar tu espacio con alfombras
-            únicas y de alta calidad.</p>
-        <p class="texto">Contáctanos para más información sobre cómo podemos ayudarte a alcanzar tu diseño.</p>
+
+    <div class="caja">
+        <p class="texto2">Nuestro equipo de expertos está listo para ayudarte a transformar tu espacio con alfombras
+            únicas y de alta calidad.
+            Contáctanos para más información sobre cómo podemos ayudarte a alcanzar tu diseño.</p>
     </div>
 </main>
-<section class="footer2">
-        <h2>!OFERTAS IMPERDIBLES¡</h2>
-        <div class="ofertas">
-            <div class="oferta">
-                <h4>OFERTA 1</h4>
-                <h2>$45.000</h2>
-                <p>Diseño estándar</p>
-                <p>Medidas de 1x0.60</p>
-                <p>100% LANA</p>
-                <button class="boton">Comprar</button>
-            </div>
-            <div class="oferta">
-                <h4>OFERTA 2</h4>
-                <h2>$50.000</h2>
-                <p>Diseño Personalizado</p>
-                <p>Medidas de 1x0.60</p>
-                <p>100% LANA</p>
-                <button class="boton">Comprar</button>
-            </div>
-            <div class="oferta">
-                <h4>OFERTA 3</h4>
-                <h2>$63.000</h2>
-                <p>Diseño Personalizado</p>
-                <p>Medidas de 1x0.60</p>
-                <p>100% LANA</p>
-                <button class="boton">Comprar</button>
-            </div>
-        </div>
-    </section>
- <footer class="footer">
-        <div class="footer-contenido">
-            <h3>BlackMagic.rug</h3>
-            <p>Diseñamos y confeccionamos alfombras únicas, hechas a mano con materiales de alta calidad.
-                Cada pieza es un toque de arte para tu hogar.</p>
 
-            <ul class="footer-contacto">
-                <li>
-                    <a href="mailto:blackmagic@gmail.com"><i class="fa-solid fa-envelope"></i> blackmagic@gmail.com</a>
-                </li>
-                <li>
-                    <a href="tel:+546447530578"><i class="fa-brands fa-whatsapp"></i> +54 3447 530578</a>
-                </li>
-                <li><i class="fa-brands fa-instagram"></i> 
-                    <a href="https://www.instagram.com/blackmagic.rugs"
-                        rel="noopener" target="_blank">blackmagic.rugs</a>
-                    </li>
-            </ul>
+<!-- SECCION DE OFERTAS -->
+<section>
+    <div>
+        <h2 class="titulo2">!OFERTAS IMPERDIBLES¡</h2>
+    </div>
+    <div class="ofertas">
+        <div class="oferta">
+            <h4>OFERTA 1</h4>
+            <h2>$45.000</h2>
+            <p>Diseño estándar</p>
+            <p>Medidas de 1x0.60</p>
+            <p>100% LANA</p>
+            <button class="boton">Comprar</button>
         </div>
+        <div class="oferta">
+            <h4>OFERTA 2</h4>
+            <h2>$50.000</h2>
+            <p>Diseño Personalizado</p>
+            <p>Medidas de 1x0.60</p>
+            <p>100% LANA</p>
+            <button class="boton">Comprar</button>
+        </div>
+        <div class="oferta">
+            <h4>OFERTA 3</h4>
+            <h2>$63.000</h2>
+            <p>Diseño Personalizado</p>
+            <p>Medidas de 1x0.60</p>
+            <p>100% LANA</p>
+            <button class="boton">Comprar</button>
+        </div>
+    </div>
+</section>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 BlackMagic.rug — Todos los derechos reservados.</p>
-        </div>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-contenido">
+        <h3>BlackMagic.rug</h3>
+        <p>Diseñamos y confeccionamos alfombras únicas, hechas a mano con materiales de alta calidad.
+            Cada pieza es un toque de arte para tu hogar.</p>
+
+        <!-- LISTA DE CONTACTO -->
+        <ul class="footer-contacto">
+            <li>
+                <a href="mailto:blackmagic@gmail.com"><i class="fa-solid fa-envelope"></i> blackmagic@gmail.com</a>
+            </li>
+            <li>
+                <a href="tel:+546447530578"><i class="fa-brands fa-whatsapp"></i> +54 3447 530578</a>
+            </li>
+            <li><i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/blackmagic.rugs" rel="noopener" target="_blank">blackmagic.rugs</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 BlackMagic.rug — Todos los derechos reservados.</p>
+    </div>
+</footer>
 </header>
+
+<!-- SCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>

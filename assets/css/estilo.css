@@ -1,604 +1,593 @@
-/*RESET Y CONFIGURACIÓN GENERAL*/
-* {
-    font-family: Arial, sans-serif;
-}
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-h1, h2, h3, h4, p {
-    text-align: center;
-    line-height: 1.5;
-}
-div h4 {
-    margin-bottom: 15%;
-    font-size: larger;
-    font-weight: 100%;
-}
+@charset "UTF-8";
 /*MENÚ DE NAVEGACIÓN*/
 header .navbar {
-    background-color: #c4c4c4;
-    padding: 0.2%;
-    display: flex;
-    margin-bottom: 5%;
-    gap: 20%;
-    justify-content: space-evenly;
+  background-color: #c4c4c4;
+  padding: 0.2%;
+  display: flex;
+  margin-bottom: 5%;
+  gap: 20%;
+  justify-content: space-evenly;
 }
-
-nav div ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+header .navbar div ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .menu .navbar-nav li a {
-    font-size: 18px;
-    padding: center;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-    
+  font-size: 18px;
+  padding: center;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
+
 .navbar .list li a:hover {
-    background-color: #8800c7;
-    color: #ffffff;
+  background-color: #8800c7;
+  color: #ffffff;
 }
 
+/*RESET Y CONFIGURACIÓN GENERAL*/
+* {
+  font-family: Arial, sans-serif;
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+div h4 {
+  margin-bottom: 5%;
+  font-size: larger;
+  font-weight: 100%;
+  font-weight: bold;
+}
+
+DIV .titulo2 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10% 10% 5% auto;
+}
+
+div .encabezado {
+  background-color: #8800c7;
+  border-radius: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 10%;
+}
+
+.texto2 {
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 20px;
+  top: 20px;
+  margin: 5% 10% 10% 10%;
+  width: 90%;
+}
 
 /* LOGO */
 .logo {
-    display: flex;
-    font-weight: bold;
-    color: #8800c7;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 15px;
+  display: flex;
+  font-weight: bold;
+  color: #8800c7;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+main div.caja {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .texto {
-    margin: 0 20px 30px;
-    font-size: 18px;
-    text-align: center;
-    color: #000;
-    font-weight: bold;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto 5% auto;
+  padding: 30px;
 }
+
 /*PRODUCTO DESTACADO*/
 .producto-destacado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 250px;
-    padding: 50px;
-    color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  padding: 50px;
+  color: #000000;
+  gap: 20px;
 }
-.producto{
-    text-align: center;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
+
+.producto {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
 }
+
 .good-imagen {
-    display: grid;
-    width: 350px;
-    height: 500px;
-    border-radius: 20px;
+  display: grid;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
 }
 
-header div .good-imagen{
-    align-items: center;
-    padding: auto;
-} 
+header div .good-imagen {
+  align-items: center;
+  padding: auto;
+}
 
-/*BOTONES*/
-.boton {
-    display: inline-block;
-    padding: 10px 40px;
-    background: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-}
-header h2 .titulo2 {
-    margin-bottom: 0;
-}
-.boton:hover {
-    background-color: #8800c7;
-    color: #ffffff;
-}
-.boton2:hover {
-    background-color: #8800c7;
-    color: #ffffff;
-}
 /*FONDO DEL HEADER*/
-.fondo {position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
+
 .fondo img {
-    opacity: 0.6;
-    z-index: -1;
-    object-fit: cover;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    
-}
-/*OFERTAS*/
-.ofertas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.oferta {
-    background: #ffffff;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    flex: 1 1 calc(30% - 40px);
-    text-align: center;
-}
-.oferta1{
-    background: #c0c0c0;
-    padding: 15px;
-    margin: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    text-align: center;
+  opacity: 0.6;
+  z-index: -1;
+  object-fit: cover;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/*OOTER*/
+/*FOOTER*/
 footer {
-    color: #000;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-.stock{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
+.stock {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
 
 .good-imagen2 {
-    width: 250px;
-    height: 350px;
-    border-radius: 50px;
+  width: 250px;
+  height: 350px;
+  border-radius: 50px;
 }
+
 footer p #ultimo {
-    background-color: #c4c4c4;
-    font-size: 14px;
-    margin-top: 10px;
+  background-color: #c4c4c4;
+  font-size: 14px;
+  margin-top: 10px;
 }
+
 .reseñas {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    text-align: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .contacto {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    text-align: left;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /*botones de contacto*/
-.wsp-btn{
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+.wsp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.wsp-btn:hover{
-    background-color: #18a551;
+.wsp-btn:hover {
+  background-color: #18a551;
 }
 
-.wsp-btn2{
-    display: inline-block;
-    background-color: #e031da;
-    padding: 12px 5px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+.wsp-btn2 {
+  display: inline-block;
+  background-color: #e031da;
+  padding: 12px 5px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.wsp-btn2:hover{
-    background-color: #941c92;
+.wsp-btn2:hover {
+  background-color: #941c92;
 }
 
-.btn1{
-    display: inline-block;
-    background-color: #efac39;
-    padding: 12px 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+.btn1 {
+  display: inline-block;
+  background-color: #efac39;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.btn1:hover{
-    background-color: #c58413;
+.btn1:hover {
+  background-color: #c58413;
 }
-
-
 
 /*mapa*/
 .mapa {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    border-radius: 10px;
-    gap: 60px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.servicios{
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  border-radius: 10px;
+  gap: 60px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contacto{
-    width: 40%;
+.servicios {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
 }
 
-.contacto-lista {
-    display: grid;
-    list-style: none;
-    padding: 20px;
-    justify-content: center;
+section div.otro {
+  background-color: black;
+  color: #ffffff;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 60%;
+  margin-top: 100px;
 }
 
-.contacto-lista li {
-    margin-bottom: 20px;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
+button,
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hace que el enlace (y el ícono) se ubiquen debajo del texto */
-.contacto-lista a {
-    display: block;
-    margin-top: 8px;
-    color: #333;
-    text-decoration: none;
-    font-weight: normal;
-    transition: color 0.3s ease;
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
 }
-
-/* Efecto hover */
-.contacto-lista a:hover {
-    color: #000;
-}
-
-/* Estilo especial para el icono de Instagram */
-.contacto-lista i {
-    margin-right: 5px;
-    font-size: 20px;
-    color: #a42d43; /* color típico de Instagram */
-    vertical-align: middle;
-}
-
-.contacto-lista .wsp-btn i  {
-    margin-right: 5px;
-    font-size: 20px;
-    color: #297a13; /* color típico de Instagram */
-    vertical-align: middle;
-}
-
-
-
 
 /* .contacto-lista{
     display: block;
     text-align: center;
     list-style: none;
 } */
-
-footer div.pregunta {
-    text-decoration: double;
+/* LOGO */
+.logo {
+  display: flex;
+  font-weight: bold;
+  color: #8800c7;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 15px;
 }
-
-.footer {
-    background-color: #111;
-    color: #eee;
-    text-align: center;
-    padding: 30px 15px;
-    font-family: "Poppins", sans-serif;
-}
-
-.footer-contenido h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.footer-contenido p {
-    font-size: 0.95rem;
-    color: #ccc;
-    max-width: 500px;
-    margin: 0 auto 20px;
-}
-
-.footer-contacto {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-contacto li {
-    margin: 8px 0;
-    font-size: 0.95rem;
-}
-
-.footer-contacto i {
-    margin-right: 8px;
-  color: #e4b700; /* color detalle elegante */
-}
-
-.footer-contacto a {
-    color: #e4b700;
-    text-decoration: none;
-}
-
-.footer-contacto a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #333;
-    margin-top: 20px;
-    padding-top: 10px;
-    font-size: 0.85rem;
-    color: #aaa;
-}
-
-
-
-
 
 /* --- VERSIÓN RESPONSIVE --- */
 @media (max-width: 780px) {
-
-    header .navbar {
+  header .navbar {
     background-color: #c4c4c4;
     margin-bottom: 5%;
     top: 50%;
     gap: 50%;
-}
-
-
-    .menu ul {
+  }
+  .menu ul {
     justify-content: center;
     gap: 5%;
-}
-
-
-    /* Reorganiza el menú */
-    .menu {
-        position: relative;
-    }
-
-    /* El logo se ve arriba, centrado */
-    nav .logo {
-        display: block;
-        text-align: center;
-        font-size: 12px;
-        font-weight: bold;
-        
-    }
-
-    /* Oculta el menú por defecto */
-    .menu ul {
-        flex-direction: column;
-        top: 60px; /* debajo del header */
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        gap: 10px;
-        text-align: center;
-    }
-
-      /* PRODUCTO DESTACADO */
-    .producto-destacado {
-        flex-direction: column-reverse; /* imagen arriba */
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .good-imagen {
-        width: 100%;
-        border-radius: 15px;
-    }
-
-    .stock {
-        grid-template-columns: 1fr;
-    } 
-
-    .servicios{
-        text-align: center;
-        width: auto;        
-    }
-
-    /*  OFERTAS  */
-    .ofertas {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    } 
-
-    .oferta {
-        width: 70%;
-        margin: 10px 0;
-    }
-
-    main .contacto{
-        width: 100%;
-    }
-
-    .mapa {
-        flex-direction: column;
-        width: 90%;
-        gap: 20px;
-
-}
-}
-
-
-    /* .servicios{
-        text-align: center;
-        font-size: 60%;
-        padding: 50%;
-    } */
-
-
-
-
-
-
-
-/*     
-
-
-    .logo {
-        font-size: 16px;
-    }
-
-  
-
-    /*.producto {
-        width: 90%;
-        padding: 15px;
-    }
-
-    
-
-    
-/* 
-    .texto {
-        font-size: 16px;
-        margin: 10px;
-    } */
-
-    /* .boton {
-        width: 100%;
-        padding: 10px;
-        font-size: 15px;
-    } */
-
-    /* footer {
-        font-size: 12px;
-        padding: 10px;
-    } 
-
-    
-
-    .good-imagen2 {
-        width: 80%;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .contacto,
-    .reseñas,
-    .servicios {
-        width: 90%;
-    }
-
-    .mapa {
-        flex-direction: column;
-        width: 90%;
-        gap: 20px;
-    } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Contenedor principal 
-.Stock {
-    gap: 30px;
-    justify-items: center;
+  }
+  /* Reorganiza el menú */
+  .menu {
+    position: relative;
+  }
+  /* El logo se ve arriba, centrado */
+  nav .logo {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /* Oculta el menú por defecto */
+  .menu ul {
+    flex-direction: column;
+    top: 60px; /* debajo del header */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+  }
+  /* PRODUCTO DESTACADO */
+  .producto-destacado {
+    flex-direction: column-reverse; /* imagen arriba */
+    gap: 50px;
     padding: 20px;
-    border-radius: 10px;
-    /*  GENERAL  /
-    body {
-        font-size: 14px;
-        margin: 0;
-        padding: 0;
-    }
+  }
+  .good-imagen {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .stock {
+    grid-template-columns: 1fr;
+  }
+  .servicios {
+    text-align: center;
+    width: auto;
+  }
+  /*  OFERTAS  */
+  .ofertas {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .oferta {
+    width: 70%;
+    margin: 10px 0;
+  }
+  main .contacto {
+    width: 100%;
+  }
+  .mapa {
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+  }
+}
+/*PRODUCTO DESTACADO*/
+.producto-destacado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  padding: 10%;
+  color: #000000;
+  font-weight: bold;
+}
 
-    h1, h2, h3, h4, p {
-        text-align: center;
-    }
+.producto {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
 
-    /*  MENÚ HAMBURGUESA  
-    .menu {
-        position: relative;
-    }
+.good-imagen {
+  display: grid;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+}
 
-    /* Oculta el menú por defecto 
-    .menu ul {
-        display: none;
-        flex-direction: column;
-        background-color: #c4c4c4;
+header div .good-imagen {
+  padding: auto;
+}
 
-    }*/
+footer div.pregunta {
+  text-decoration: double;
+}
 
+.footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 30px 15px;
+  font-family: "Poppins", sans-serif;
+}
 
+.footer-contenido h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
 
+.footer-contenido p {
+  font-size: 0.95rem;
+  color: #ccc;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.footer-contacto {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contacto li {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.footer-contacto i {
+  margin-right: 8px;
+  color: #e4b700; /* color detalle elegante */
+}
+
+.footer-contacto a {
+  color: #e4b700;
+  text-decoration: none;
+}
+
+.footer-contacto a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/*OFERTAS*/
+.ofertas {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.oferta {
+  background: #ffffff;
+  padding: 15px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(30% - 40px);
+  text-align: center;
+}
+
+.oferta1 {
+  background: #c0c0c0;
+  padding: 15px;
+  margin: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stock {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.stock .card {
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+}
+.stock .card h4 {
+  padding: 10px;
+  gap: 5px;
+  margin: 5px;
+}
+
+.contacto {
+  width: 40%;
+}
+
+.contacto-lista {
+  display: grid;
+  list-style: none;
+  padding: 20px;
+  justify-content: center;
+}
+
+.contacto-lista li {
+  margin-bottom: 20px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+/* Hace que el enlace (y el ícono) se ubiquen debajo del texto */
+.contacto-lista a {
+  display: block;
+  margin-top: 8px;
+  color: #333;
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover */
+.contacto-lista a:hover {
+  color: #000;
+}
+
+/* Estilo especial para el icono de Instagram */
+.contacto-lista i {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #a42d43; /* color de Instagram */
+  vertical-align: middle;
+}
+
+.contacto-lista .wsp-btn i {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #297a13;
+  vertical-align: middle;
+}
+
+/*BOTONES*/
+.boton {
+  display: inline-block;
+  padding: 10px 40px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header h2 .titulo2 {
+  margin-bottom: 0;
+}
+
+.boton:hover {
+  background-color: #8800c7;
+  color: #ffffff;
+}
+
+.boton2:hover {
+  background-color: #8800c7;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=estilo.css.map */

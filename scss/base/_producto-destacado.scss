@@ -1,0 +1,27 @@
+/*PRODUCTO DESTACADO*/
+.producto-destacado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    padding: 10%;
+    color: #000000;
+    font-weight: bold;
+
+}
+.producto{
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.good-imagen {
+    display: grid;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+header div .good-imagen{
+    padding: auto;
+} 
