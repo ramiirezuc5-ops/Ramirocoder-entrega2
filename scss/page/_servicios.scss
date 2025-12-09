@@ -1,0 +1,14 @@
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+
+.servicios{
+    background-color: map.get(mapa.$colores, color2);
+    padding: variables.$border;
+    border-radius: map.get(mapa.$medidas,medida-2);
+    text-align: center;
+    width: 40% auto;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}

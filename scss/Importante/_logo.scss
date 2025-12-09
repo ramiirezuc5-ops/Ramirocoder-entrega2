@@ -1,10 +1,16 @@
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+
+
+
 /* LOGO */
 .logo {
     display: flex;
     font-weight: bold;
-    color: #8800c7;
+    color: variables.$color-primario;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: variables.$medida15px;
 }

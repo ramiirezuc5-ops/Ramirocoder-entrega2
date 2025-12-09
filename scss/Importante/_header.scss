@@ -1,19 +1,21 @@
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+
+
+
 /*MENÚ DE NAVEGACIÓN*/
 header {
     .navbar {
         background-color: #c4c4c4;
         padding: 0.2%;
         display: flex;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
         gap: 20%;
-        justify-content: space-evenly;
         div{
             ul{
                 list-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
+                gap: variables.$border;
             }
         }
     }
@@ -24,12 +26,12 @@ header {
 .menu .navbar-nav li a {
     font-size: 18px;
     padding: center;
-    border-radius: 10px;
+    border-radius: map.get(mapa.$medidas,medida-2);
     transition: background-color 0.3s;
     
 }
 
 .navbar .list li a:hover {
-    background-color: #8800c7;
-    color: #ffffff;
+    background-color: variables.$color-primario;
+    color: variables.$color2;
 }

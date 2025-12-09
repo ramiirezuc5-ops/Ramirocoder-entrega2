@@ -1,11 +1,15 @@
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+
 /*BOTONES*/
 .boton {
     display: inline-block;
     padding: 10px 40px;
-    background: #000000;
-    color: #fff;
+    background: variables.$colorBK;
+    color: variables.$color2;
     border: none;
-    border-radius: 15px;
+    border-radius: variables.$medida15px;
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
@@ -14,10 +18,10 @@ header h2 .titulo2 {
     margin-bottom: 0;
 }
 .boton:hover {
-    background-color: #8800c7;
-    color: #ffffff;
+    background-color: variables.$color-primario;
+    color: variables.$color2;
 }
 .boton2:hover {
-    background-color: #8800c7;
-    color: #ffffff;
+    background-color: variables.$color-primario;
+    color: variables.$color2;
 }

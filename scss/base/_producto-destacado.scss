@@ -1,25 +1,31 @@
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+@use'../utilities/extend';
+
+
 /*PRODUCTO DESTACADO*/
 .producto-destacado {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
-    padding: 10%;
-    color: #000000;
+    gap: 80px;
+    padding: variables.$medida15px;
+    color: variables.$colorBK;
     font-weight: bold;
 
 }
 .producto{
     text-align: center;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
+    background: variables.$color2;
+    padding: variables.$border;
+    border-radius: variables.$border;
 }
 .good-imagen {
     display: grid;
-    width: 350px;
+    width: 300px;
     height: 500px;
-    border-radius: 20px;
+    border-radius: variables.$border;
 }
 
 header div .good-imagen{

@@ -1,3 +1,7 @@
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+
 footer div.pregunta {
     text-decoration: double;
 }
@@ -12,8 +16,8 @@ footer div.pregunta {
 
 .footer-contenido h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #fff;
+    margin-bottom: map.get(mapa.$medidas,medida-2);
+    color: variables.$color2;
 }
 
 .footer-contenido p {
@@ -50,8 +54,8 @@ footer div.pregunta {
 
 .footer-bottom {
     border-top: 1px solid #333;
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-top: variables.$border;
+    padding-top: map.get(mapa.$medidas,medida-2);
     font-size: 0.85rem;
     color: #aaa;
 }

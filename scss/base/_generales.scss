@@ -1,3 +1,9 @@
+@use'../base/variables'as variables;
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+@use'../utilities/mixins';
+
+
 /*RESET Y CONFIGURACIÓN GENERAL*/
 * {
     font-family: Arial, sans-serif;
@@ -28,14 +34,14 @@ div h4 {
 DIV{
     .titulo2{
         width: 80%;
-        display: flex;
-        align-items: center;
-        background-color: #000000;
-        justify-content: center;;
-        border-radius: 20px;
-        font-weight: bold;
-        color: #ffffff;
+        @include mixins.flex-center(flex,center,center);
+        background-color: variables.$colorBK;
+        border-radius: variables.$border;
+        font-weight: variables.$font;
+        color: variables.$color2;
         margin: 10% 10% 5% auto ;
+        font-size: variables.$medida-font;
+        padding: variables.$pad;
     }
 }
 
@@ -43,61 +49,58 @@ DIV{
 // ENCABEZADO
 div{
     .encabezado{
-        background-color: #8800c7;
-        border-radius: 20px;
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: 10%;
+        background-color: variables.$color-primario;
+        border-radius: variables.$border;
+        color: variables.$color2;
+        @include mixins.flex-center(flex,center,center);
+        width: 60%;
+        margin: 10% auto;
+        font-size: 26px;
+        padding: map.get(mapa.$medidas,medida-2);
         
     }
 }
 
 
 .texto2{
-    background-color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    border-radius: 20px;
-    top: 20px;
+    background-color: variables.$color-primario;
+    font-size: variables.$border;
+    font-weight: variables.$font;
+    color: variables.$color2;
+    border-radius: variables.$border;
+    top: variables.$border;
     margin: 5% 10% 10% 10%;
     width: 90%;
+    padding: 5%;
 }
 
 
 /* LOGO */
 .logo {
-    display: flex;
-    font-weight: bold;
-    color: #8800c7;
+    @include mixins.text-center(display,text-center);
+    font-weight: variables.$font;
+    color: variables.$color-primario;
     font-size: 18px;
-    text-align: center;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: variables.$medida15px;
 }
 
 main{
     div.caja{
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        width: 60%;
+        @include mixins.flex-center(flex,center,center);
+        padding: variables.$medida;
         margin: 0 auto;
     }
 }
 
 .texto {
-    margin: 0 auto;
-    font-size: 18px;
+    font-size: variables.$medida15px;
     text-align: center;
-    color: #000;
-    font-weight: bold;
-    background-color: #ffffff;
-    border-radius: 20px;
-    width: 50%;
+    color: variables.$colorBK;
+    font-weight: variables.$font;
+    background-color: variables.$color2;
+    border-radius: variables.$border;
+    width: 80%;
     margin: 0 auto 5% auto;
     padding: 30px;
 }
@@ -105,21 +108,19 @@ main{
 
 /*PRODUCTO DESTACADO*/
 .producto-destacado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex-center(flex,center,center);
     gap: 250px;
     padding: 50px;
-    color: #000000;
-    gap: 20px;
+    color: variables.$colorBK;
+    gap: variables.$border;
 }
 
 
 .producto{
     text-align: center;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
+    background: variables.$color2;
+    padding: variables.$border;
+    border-radius: variables.$border;
 }
 
 
@@ -127,11 +128,11 @@ main{
     display: grid;
     width: 350px;
     height: 500px;
-    border-radius: 20px;
+    border-radius: variables.$border;
 }
 
 header div .good-imagen{
-    align-items: center;
+    @include mixins.flex-center(flex,center,center);;
     padding: auto;
 } 
 
@@ -161,20 +162,20 @@ header div .good-imagen{
 
 /*FOOTER*/
 footer {
-    color: #000;
+    color: variables.$colorBK;
     text-align: center;
-    padding: 15px;
+    padding: variables.$medida15px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: variables.$border;
 }
 
 
 .stock{
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: variables.$border;
     text-align: center;
+    justify-content: center;
 }
 
 
@@ -188,14 +189,14 @@ footer {
 footer p #ultimo {
     background-color: #c4c4c4;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: map.get(mapa.$medidas,medida-2);
 }
 
 
 .reseñas {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: variables.$colorF4;
+    padding: variables.$border;
+    border-radius: map.get(mapa.$medidas,medida-2);
     margin: 20px 0;
     text-align: left;
     width: 80%;
@@ -205,12 +206,12 @@ footer p #ultimo {
 
 
 .contacto {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: variables.$colorF4;
+    padding: map.get(mapa.$medidas,medida-2);
+    border-radius: map.get(mapa.$medidas,medida-2);
     margin: 20px 0;
     text-align: left;
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -220,9 +221,9 @@ footer p #ultimo {
 .wsp-btn{
     display: inline-block;
     background-color: #25D366;
-    color: white;
+    color: variables.$color2;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: variables.$radius;
     transition: background-color 0.3s ease;
 }
 
@@ -258,10 +259,9 @@ footer p #ultimo {
 
 /*mapa*/
 .mapa {
-    display: flex;
-    justify-content: center;
+    @include mixins.flex-center(flex,center,center);
     margin-top: 80px;
-    border-radius: 10px;
+    border-radius: map.get(mapa.$medidas,medida-2);
     gap: 60px;
     width: 50%;
     margin-left: auto;
@@ -270,9 +270,9 @@ footer p #ultimo {
 
 
 .servicios{
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: variables.$colorF4;
+    padding: variables.$border;
+    border-radius: map.get(mapa.$medidas,medida-2);
     text-align: center;
     width: 40%;
     margin-left: auto;
@@ -282,11 +282,11 @@ footer p #ultimo {
 
 section{ 
     div.otro{
-        background-color: black ;
-        color: #ffffff;
-        border-radius: 20px;
+        background-color: variables.$colorBK;
+        color: variables.$color2;
+        border-radius: variables.$border;
         margin: 0 auto;
-        padding: 10px;
+        padding: map.get(mapa.$medidas,medida-2);
         width: 60%;
         margin-top: 100px;
     }

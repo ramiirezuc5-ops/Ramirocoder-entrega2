@@ -4,15 +4,11 @@ header .navbar {
   background-color: #c4c4c4;
   padding: 0.2%;
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   gap: 20%;
-  justify-content: space-evenly;
 }
 header .navbar div ul {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
@@ -25,7 +21,7 @@ header .navbar div ul {
 
 .navbar .list li a:hover {
   background-color: #8800c7;
-  color: #ffffff;
+  color: white;
 }
 
 /*RESET Y CONFIGURACIÓN GENERAL*/
@@ -54,75 +50,79 @@ div h4 {
 DIV .titulo2 {
   width: 80%;
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #000000;
-  justify-content: center;
   border-radius: 20px;
   font-weight: bold;
-  color: #ffffff;
-  margin: 10%;
+  color: white;
+  margin: 10% 10% 5% auto;
+  font-size: 22px;
+  padding: 10px;
 }
 
 div .encabezado {
   background-color: #8800c7;
   border-radius: 20px;
-  color: #ffffff;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 60%;
   margin: 10% auto;
-  width: 80%;
-  padding: 15px;
+  font-size: 26px;
+  padding: 10px;
 }
 
 .texto2 {
-  background-color: #ffffff;
+  background-color: #8800c7;
   font-size: 20px;
   font-weight: bold;
-  color: black;
+  color: white;
   border-radius: 20px;
   top: 20px;
   margin: 5% 10% 10% 10%;
   width: 90%;
+  padding: 5%;
 }
 
 /* LOGO */
 .logo {
-  display: flex;
+  display: display;
+  text-align: text-center;
   font-weight: bold;
   color: #8800c7;
-  text-align: center;
+  font-size: 18px;
   text-decoration: none;
-  width: 10%;
+  margin-left: 15px;
 }
 
 main div.caja {
   display: flex;
   justify-content: center;
-  padding: 5%;
-  width: 100%;
+  align-items: center;
+  padding: 2px;
   margin: 0 auto;
 }
 
 .texto {
-  margin: 0 auto;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
-  color: #000;
+  color: #000000;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 20px;
   width: 80%;
   margin: 0 auto 5% auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 /*PRODUCTO DESTACADO*/
 .producto-destacado {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 150px;
+  align-items: center;
+  gap: 250px;
   padding: 50px;
   color: #000000;
   gap: 20px;
@@ -130,7 +130,7 @@ main div.caja {
 
 .producto {
   text-align: center;
-  background: #ffffff;
+  background: white;
   padding: 20px;
   border-radius: 20px;
 }
@@ -143,6 +143,8 @@ main div.caja {
 }
 
 header div .good-imagen {
+  display: flex;
+  justify-content: center;
   align-items: center;
   padding: auto;
 }
@@ -169,7 +171,7 @@ header div .good-imagen {
 
 /*FOOTER*/
 footer {
-  color: #000;
+  color: #000000;
   text-align: center;
   padding: 15px;
   border-radius: 5px;
@@ -178,10 +180,10 @@ footer {
 
 .stock {
   display: grid;
-  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   text-align: center;
+  justify-content: center;
 }
 
 .good-imagen2 {
@@ -197,7 +199,7 @@ footer p #ultimo {
 }
 
 .reseñas {
-  background-color: #f4f4f4;
+  background-color: #F4F4F4;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
@@ -208,12 +210,12 @@ footer p #ultimo {
 }
 
 .contacto {
-  background-color: #f4f4f4;
-  padding: 20px;
+  background-color: #F4F4F4;
+  padding: 10px;
   border-radius: 10px;
   margin: 20px 0;
   text-align: left;
-  width: 60%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -260,6 +262,7 @@ footer p #ultimo {
 .mapa {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 80px;
   border-radius: 10px;
   gap: 60px;
@@ -269,7 +272,7 @@ footer p #ultimo {
 }
 
 .servicios {
-  background-color: #f4f4f4;
+  background-color: #F4F4F4;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -280,8 +283,8 @@ footer p #ultimo {
 }
 
 section div.otro {
-  background-color: black;
-  color: #ffffff;
+  background-color: #000000;
+  color: white;
   border-radius: 20px;
   margin: 0 auto;
   padding: 10px;
@@ -351,7 +354,7 @@ button:hover,
   /* PRODUCTO DESTACADO */
   .producto-destacado {
     flex-direction: column-reverse; /* imagen arriba */
-    gap: 50px;
+    gap: 150px;
     padding: 20px;
   }
   .good-imagen {
@@ -375,12 +378,6 @@ button:hover,
     width: 70%;
     margin: 10px 0;
   }
-
-  main .contacto{
-    width: 80%;
-  }
-
-
   .mapa {
     flex-direction: column;
     width: 90%;
@@ -392,28 +389,39 @@ button:hover,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 150px;
-  padding: 10%;
+  gap: 80px;
+  padding: 15px;
   color: #000000;
   font-weight: bold;
 }
 
 .producto {
   text-align: center;
-  background: #ffffff;
+  background: white;
   padding: 20px;
   border-radius: 20px;
 }
 
 .good-imagen {
   display: grid;
-  width: 350px;
+  width: 300px;
   height: 500px;
   border-radius: 20px;
 }
 
 header div .good-imagen {
   padding: auto;
+}
+
+.servicios {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40% auto;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
 }
 
 footer div.pregunta {
@@ -431,7 +439,7 @@ footer div.pregunta {
 .footer-contenido h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: white;
 }
 
 .footer-contenido p {
@@ -519,7 +527,13 @@ footer div.pregunta {
 }
 
 .contacto {
-  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: left;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacto-lista {
@@ -548,7 +562,7 @@ footer div.pregunta {
 
 /* Efecto hover */
 .contacto-lista a:hover {
-  color: #000;
+  color: #000000;
 }
 
 /* Estilo especial para el icono de Instagram */
@@ -571,7 +585,7 @@ footer div.pregunta {
   display: inline-block;
   padding: 10px 40px;
   background: #000000;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 15px;
   font-weight: bold;
@@ -585,12 +599,12 @@ header h2 .titulo2 {
 
 .boton:hover {
   background-color: #8800c7;
-  color: #ffffff;
+  color: white;
 }
 
 .boton2:hover {
   background-color: #8800c7;
-  color: #ffffff;
+  color: white;
 }
 
 /*# sourceMappingURL=estilo.css.map */

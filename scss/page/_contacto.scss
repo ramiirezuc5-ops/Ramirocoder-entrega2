@@ -1,16 +1,29 @@
-main .contacto{
-    width: 10%;
+@use'../base/variables';
+@use'sass:map';
+@use'../utilities/maps'as mapa;
+
+
+.contacto {
+    background-color: map.get(mapa.$colores, colorf4);
+    padding: map.get(mapa.$medidas,medida-2);
+    border-radius: map.get(mapa.$medidas,medida-2);
+    margin: 20px 0;
+    text-align: left;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .contacto-lista {
     display: grid;
     list-style: none;
-    padding: 20px;
+    padding: map.get(mapa.$medidas, border);
     justify-content: center;
 }
 
 .contacto-lista li {
-    margin-bottom: 20px;
+    margin-bottom:  map.get(mapa.$medidas, border);
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -28,20 +41,20 @@ main .contacto{
 
 /* Efecto hover */
 .contacto-lista a:hover {
-    color: #000;
+    color: variables.$colorBK;
 }
 
 /* Estilo especial para el icono de Instagram */
 .contacto-lista i {
     margin-right: 5px;
-    font-size: 20px;
+    font-size:  map.get(mapa.$medidas, border);
     color: #a42d43; /* color de Instagram */
     vertical-align: middle;
 }
 
 .contacto-lista .wsp-btn i  {
     margin-right: 5px;
-    font-size: 20px;
+    font-size:  map.get(mapa.$medidas, border);
     color: #297a13; 
     vertical-align: middle;
 }
